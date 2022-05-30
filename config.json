@@ -1,0 +1,8 @@
+[{
+
+    "name": "time",
+    "listen": "[::]:9000",
+    "upstream": "worldtimeapi.org:80",
+    "enabled": true,
+    "toxics": []
+}]

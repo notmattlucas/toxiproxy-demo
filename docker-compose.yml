@@ -1,0 +1,13 @@
+version: "3.9"
+services:
+  toxiproxy:
+    image: ghcr.io/shopify/toxiproxy:latest
+    ports:
+      - "8474:8474"
+      - "9000:9000"
+    volumes:
+      - ./config.json:/config.json
+    command:
+      - --config
+      - /config.json
+      
